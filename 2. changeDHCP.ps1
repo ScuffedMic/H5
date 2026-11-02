@@ -7,4 +7,3 @@ $Startrange
 $EndRange
 
 Set-DhcpServer4Scope -ScopeId $ScopeId -StartRange $Startrange -EndRange $EndRange
-
