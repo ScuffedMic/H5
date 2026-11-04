@@ -3,17 +3,17 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$DomainName,
 
-    [Parameter(Mandatory = $true)]
-    [string]$SiteName,
+    [Parameter()]
+    [string]$SiteName = "Default-First-Site-Name",
 
     [Parameter()]
     [System.Management.Automation.PSCredential]$Credential,
 
     [Parameter()]
-    [string]$PreferredDnsServer = "10.0.0.10",
+    [string]$PreferredDnsServer = "192.168.99.30",
 
     [Parameter()]
-    [string]$AlternateDnsServer = "10.0.0.11",
+    [string]$AlternateDnsServer = "192.168.99.31",
 
     [Parameter()]
     [switch]$SkipDnsConfig,
@@ -69,10 +69,6 @@ if (-not $Credential) {
 
 if (-not $DomainName) {
     throw "Du skal angive -DomainName, fx 'contoso.local'."
-}
-
-if (-not $SiteName) {
-    throw "Du skal angive -SiteName, fx 'Default-First-Site-Name'."
 }
 
 $computerDomain = (Get-CimInstance Win32_ComputerSystem).Domain
