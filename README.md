@@ -23,3 +23,8 @@ En Application Server skal konfigureres til sende events for overvågning. Vælg
 ### 5. Request For Change: Sharing / mappe med begrænset adgang
 
 En eksisterende share (mappe) skal ændres, så kun administrationen har adgang. IT afdelingen må ikke kunne tilgå indholdet af mappen. Brug en afdeling (OU) der har adgang og én, der ikke har fra din organisation så det passer til opgaven. Mappen skal sikres så der er den bedst mulige situation for at genskabe data (ved fejl og sletning af filer i dette share).
+
+### 6. Microsoft Exchange Server On-Premises
+#### A. En ny ansat skal have en mailboks.
+#### B. En ansat har slettet en mail ved en fejl. Genskab mailen.
+#### C. En ansat har fået fået nyt navn. Foretag ændringer på eksisterende mailboks.
